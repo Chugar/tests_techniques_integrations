@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Metas -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+
+        <!-- Bootstrap -->
+        <link rel="stylesheet" 
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
+            crossorigin="anonymous"
+        >
+
+        <!-- Font awesome -->
+        <script src="https://kit.fontawesome.com/5f876598f4.js"></script>
+
+        <!-- Google fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+
+        <!-- Stylesheets -->
+        <link rel="stylesheet" href="css/main.css">
+        
+        <title>Exercice integration</title>
+    </head>
+
+
+    <body>
+        <div class="container">
+
+            <!-- Contact Us section -->
+            <section id="contact-us" class="row justify-content-end">
+
+                <!-- Contact form block-->
+                <div class="col-lg-6">
+                    <form id="contactus-form" >
+
+                        <h2>Contactez-nous <br> et visualisez nos plans</h2>
+
+                        <!-- Gender choice -->
+                        <div class="form-group mb-1">
+                            <span 
+                                class="d-block required-input"                 
+                                aria-labelledby="radio-female radio-male"
+                            >Civilité</span>
+        
+                            <div class="form-check form-check-inline ml-3">
+                                <input
+                                    class="form-check-input" 
+                                    type="radio" 
+                                    name="radio-gender" 
+                                    id="radio-female" 
+                                    value="madame"
+                                    required
+                                    checked
+                                >
+                                <label class="form-check-label" for="radio-female">Madame</label>
+                            </div>
+                            
+                            <div class="form-check form-check-inline ml-3">
+                                <input 
+                                    class="form-check-input"
+                                    type="radio"
+                                    name="radio-gender"
+                                    id="radio-male" 
+                                    value="monsieur"
+                                >
+                                <label class="form-check-label" for="radio-male">Monsieur</label>
+                            </div>
+                        </div>
+                        <!-- ./ Gender choice -->
+
+                        <!-- Firstname and lastname -->
+                        <div class="form-row">
+                            <div class="col-md-6">
+                                <label for="firstname" class="required-input">Nom</label>
+                                <input 
+                                    type="text" 
+                                    class="form-control"
+                                    id="firstname"
+                                    name="firstname" 
+                                    placeholder="Votre nom"
+                                    required
+                                >
+                            </div>
+                            <div class="col-md-6">
+                                <label for="lastname" class="required-input">Prénom</label>
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    id="lastname" 
+                                    name="lastname"
+                                    placeholder="Votre prénom"
+                                    required
+                                >
+                            </div>
+                        </div>
+                        <!-- ./ Firstname and lastname -->
+
+                        <!-- Email adress -->
+                        <div class="form-group mb-0">
+                            <label for="email-adress" class="required-input">Email</label>
+                            <input 
+                                type="email"
+                                class="form-control"
+                                id="email-adress"
+                                placeholder="Votre email"
+                                required
+                            >
+                        </div>
+                        <!-- ./ Email adress -->
+
+                        <!-- Phone number and area code -->
+                        <div class="form-row">
+                            <div class="col-md-6">
+                                <label for="phone-number" class="required-input">Téléphone</label>
+                                <input 
+                                    type="tel" 
+                                    class="form-control"
+                                    id="phone-number"
+                                    name="phone-number" 
+                                    placeholder="Votre téléphone"
+                                    required
+                                >
+                            </div>
+                            <div class="col-md-6">
+                                <label for="area-code" class="required-input">Code postal</label>
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    id="area-code" 
+                                    name="area-code"
+                                    placeholder="Votre code postal"
+                                    required
+                                >
+                            </div>
+                        </div>
+                        <!-- ./ Phone number and area code -->
+
+                        <!-- Message area -->
+                        <div class="form-group">
+                            <label for="sent-message">Message</label>
+                            <textarea 
+                                class="form-control"
+                                name="sent-message" 
+                                id="sent-message" 
+                                cols="30"
+                                placeholder="Votre message"
+                            ></textarea>
+                        </div>
+                        <!-- ./ Message area -->
+
+                        <!-- Promotions option -->
+                        <div class="form-group">
+                            <input 
+                                class="form-check-input" 
+                                type="checkbox" 
+                                name="special-offers" 
+                                id="special-offers"
+                            >
+                            <label class="form-check-label" for="special-offers">
+                                En cochant sur cette case, je consens à recevoir les offres commerciales et des informations sur les produits et services de Promoteur. <a href="#">Menstions sur la proctection des données personnelles.</a>
+                            </label>
+                        </div>
+                        <!-- ./ Promotions option -->
+
+                        <!-- Sumbit button -->
+                        <div class="form-row">
+                            <button type="submit">Envoyer</button>
+                        </div>
+                        <!-- ./ Submit button -->
+
+                        <!--  -->
+                        <small> * Obligatoire </small>
+                    </form>
+                </div>
+                <!-- ./ Contact form block-->
+
+
+                <!-- Additionnal info block-->
+                <div id="additionnal-info" class="col-lg-6">
+                    
+                    <!-- Additionnal info : text -->
+                    <div class="row">
+
+                        <div class="col-md-6">
+                            <header>
+                                <svg class="additionnal-info-icon">
+                                    <use xlink:href="#seller-icon" href="#seller-icon" class="icon-details"></use>
+                                </svg>
+                                <h3> Bureau de vente </h3>
+                            </header>
+
+                            <address>
+                                <p>31 rue  de Rocambourt</p>
+                                <p>92160, Antony</p>
+                            </address>
+
+                            <p> Du lundi au vendredi de <time>14h</time> a <time>19h</time> </p>
+                            <p> Le samedi de <time>10h00</time> a <time>12h30</time> et de <time>14h</time> à <time>19h</time></p>
+
+
+                            <h3 class="mt-4">Nous contacter</h3>
+                            <button>
+                                0 800 659 36
+                                <small>Numero vert et gratuit</small>
+                            </button>
+
+                        </div>
+
+                        <div class="col-md-6">
+
+                            <header>
+                                <h3>
+                                    <svg class="additionnal-info-icon">
+                                        <use xlink:href="#access-icon" href="#access-icon" class="icon-details"></use>
+                                    </svg>
+                                    Accèss
+                                </h3>
+                            </header>
+
+                            <p>
+                                <h4>Rejoindre Paris et l'île-de-France</h4>
+                                <ul>
+                                    <li>25 minutes en voiture via l'A31</li>
+                                    <li>25 minutes en RER B depuis la gare d'Antony Rive Gauche (à 6 minutes à pied).</li>
+                                </ul>
+                            </p>
+
+                            <p>
+                                <h4>Circuler dans Antony et autour</h4>
+                                <ul>
+                                    <li>A 10 minutes à pied au centre-ville et des commerces</li>
+                                    <li>A 850 mètres à pied du bus iterne de la commune «Gare d'Antony Rive Gauche » BUS 265, ligne J et ligne V»</li>
+                                </ul>
+                            </p>
+
+                        </div>
+                    </div>
+
+                    <!-- Additionnal info : map -->
+                    <div class="row">
+                        <div class="map-container">
+                            
+                            <img src="./assets/img/plan.jpg" alt="Access plan">
+                            <div class="overlay">
+                                <svg class="mag-indicator">
+                                    <use xlink:href="#mag-icon" href="#mag-icon" class="indicator-details"></use>
+                                </svg>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- ./Additionnal info block-->
+                
+            </section>
+            <!-- ./ Contact us section -->
+
+
+
+            <!-- SVGs -->
+            <svg data-name="Calque 1" xmlns="http://www.w3.org/2000/svg"><symbol id="access-icon" viewBox="0 0 70.57 70.57"><defs><style>.access-icon-part-2{fill:var(--main-color)}</style><clipPath id="access-icon-clipPath"><path fill="none" d="M0 0h70.57v70.57H0z"/></clipPath></defs><g clip-path="url(#access-icon-clipPath)"><path class="access-icon-part-2" d="M39.11 70.37a35.29 35.29 0 1 1 31.26-31.25 35.33 35.33 0 0 1-31.26 31.25m-.43-66.19a31.29 31.29 0 1 0 27.71 27.71A31.32 31.32 0 0 0 38.68 4.18"/><path class="access-icon-part-2" transform="rotate(-44.99 42.952 35.807)" d="M36.32 33.31h13.27v5H36.32z"/><path class="access-icon-part-2" transform="rotate(-45 42.953 29.968)" d="M40.45 23.33h5V36.6h-5z"/><path stroke="var(--main-color)" stroke-miterlimit="10" stroke-width="5" fill="none" d="M42.95 32.88H27.18v14.19"/></g></symbol></svg>
+            <svg data-name="Calque 1" xmlns="http://www.w3.org/2000/svg"><symbol id="mag-icon" viewBox="0 0 70.57 70.57"><defs><style>.magnifier-icon-stroke{fill:none;stroke:var(--main-color);stroke-miterlimit:10;stroke-width:5px}</style><clipPath id="bbe8a21e-3a81-4552-b2ac-b6c7f6e1df28"><path fill="none" d="M0 0h70.57v70.57H0z"/></clipPath></defs><g clip-path="url(#bbe8a21e-3a81-4552-b2ac-b6c7f6e1df28)"><path d="M39.11 70.37a35.29 35.29 0 1 1 31.26-31.25 35.33 35.33 0 0 1-31.26 31.25m-.43-66.19a31.29 31.29 0 1 0 27.71 27.71A31.32 31.32 0 0 0 38.68 4.18" fill="var(--main-color)"/><path class="magnifier-icon-stroke" d="M38.06 25.69a8.75 8.75 0 1 1-12.37 0 8.74 8.74 0 0 1 12.37 0zM47.44 47.44l-9.38-9.38"/></g></symbol></svg>
+            <svg data-name="Calque 1" xmlns="http://www.w3.org/2000/svg"><symbol id="seller-icon" viewBox="0 0 74.61 74.61"><defs><style>.seller-icon-part{fill:none;stroke:var(--main-color);stroke-miterlimit:10;stroke-width:5px}</style></defs><path class="seller-icon-part" d="M401.43 24.2a8.47 8.47 0 0 1-16.93 0M418.84 24.2a8.47 8.47 0 0 1-16.93 0M436.25 24.2a8.47 8.47 0 0 1-16.93 0M453.66 24.2a8.47 8.47 0 0 1-16.93 0M409 79.37V59.06a10.32 10.32 0 0 1 10.31-10.31 10.32 10.32 0 0 1 10.31 10.31v20.31" transform="translate(-381.55 -7.26)"/><rect class="seller-icon-part" x="2.5" y="2.5" width="69.61" height="69.61" rx="4.86" ry="4.86"/></symbol></svg>
+
+        </div>
+    </body>
+</html>

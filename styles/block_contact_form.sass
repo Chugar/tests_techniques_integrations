@@ -1,0 +1,103 @@
+// Additionnal classes
+.required-input:after
+    content: "*"
+
+
+// Form styling
+#contactus-form
+    background-color: $primary-color
+    border-radius: 15px
+    color: $text-color-2
+    padding: 40px
+
+    // Titles
+    h2 
+        font-size: 36px
+        font-weight: 500
+
+    // Labels
+    label, span
+        font-size: 14px
+
+        &.form-check-label
+            font-size: 16px
+            font-weight: 500
+
+        &[for='special-offers']
+            font-size: 12px
+            font-weight: bold
+            padding-left: 20px
+            cursor: pointer
+            letter-spacing: -1px // pour tenir sur deux lignes !
+            > a
+                color: $text-color-2
+                text-decoration: underline
+    
+    // Inputs
+    input, textarea
+        border-radius: 25px
+        border: none
+        color: $text-color-1
+        font-size: 18px
+        font-weight: 500
+        padding: 15px 25px
+
+        // Custom checkbox and radio buttons
+        &[type='checkbox'], &[type='radio']
+            display: none
+
+        // Radio button
+        &[type='radio'] + label:before
+            background-color: #ffffff
+            border: 1px solid #ffffff
+            border-radius: 100%
+            content: ''
+            cursor: pointer
+            position: absolute
+            left: -25px
+            top: 0
+            width: 18px
+            height: 18px
+            padding-top: 2px
+
+        &[type='radio']:checked + label:before
+            content: '\f111'
+            font-family: 'FontAwesome'
+            font-size: 12px
+            line-height: 12px
+            color: $primary-color
+            text-align: center
+            transition: all 0.2s ease
+        
+        // Checkbox button
+        &[type='checkbox'] + label:before
+            border: 2px solid #ffffff
+            border-radius: 3px
+            color: $primary-color
+            content: ""
+            cursor: pointer
+            position: absolute
+            left: 38px      
+            width: 14px
+            height: 14px  
+            box-sizing: content-box
+            transition: display, 350ms 
+
+        &[type='checkbox']:checked + label:before
+            content: '\f00c'
+            font-family: 'FontAwesome'
+            font-size: 12px
+            line-height: 12px
+            text-align: center
+            font-weight: light
+            color: #ffffff
+
+
+    // Submit button
+    button[type="submit"]
+        @include round_button
+        margin: auto
+        width: 50%
+
+    small
+        font-size: 12px

@@ -1,0 +1,23 @@
+<svg data-name="Calque 1" xmlns="http://www.w3.org/2000/svg">
+    <symbol id="seller-icon" viewBox="0 0 74.61 74.61">
+        <defs>
+            <style>
+                .seller-icon-part {
+                    fill: none;
+                    stroke: var(--main-color);
+                    stroke-miterlimit: 10;
+                    stroke-width: 5px;
+                }
+                    
+            </style>
+        </defs>
+        <title>bureau-de-vente</title>
+        <path class="seller-icon-part" d="M401.43,24.2a8.47,8.47,0,0,1-16.93,0" transform="translate(-381.55 -7.26)" />
+        <path class="seller-icon-part" d="M418.84,24.2a8.47,8.47,0,0,1-16.93,0" transform="translate(-381.55 -7.26)" />
+        <path class="seller-icon-part" d="M436.25,24.2a8.47,8.47,0,0,1-16.93,0" transform="translate(-381.55 -7.26)" />
+        <path class="seller-icon-part" d="M453.66,24.2a8.47,8.47,0,0,1-16.93,0" transform="translate(-381.55 -7.26)" />
+        <path class="seller-icon-part" d="M409,79.37V59.06a10.32,10.32,0,0,1,10.31-10.31h0a10.32,10.32,0,0,1,10.31,10.31V79.37" transform="translate(-381.55 -7.26)" />
+        <rect class="seller-icon-part" x="2.5" y="2.5" width="69.61" height="69.61" rx="4.86" ry="4.86" />
+    </symbol>
+</svg>
+
