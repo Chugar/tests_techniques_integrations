@@ -2,6 +2,9 @@
 h1, h2, h3, h4, p, span, small, label, input, button, a {
   font-family: "Open Sans", sans-serif; }
 
+@media (max-width: 992px) {
+  .container {
+    width: 100%; } }
 .required-input:after {
   content: "*"; }
 
