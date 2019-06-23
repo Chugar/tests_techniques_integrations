@@ -95,7 +95,8 @@ h1, h2, h3, h4, p, span, small, label, input, button, a {
     transition-property: background-color, color;
     transition-duration: 500ms;
     margin: auto;
-    width: 50%; }
+    width: 50%;
+    border: 2px solid #0070a3; }
     #contactus-form button[type="submit"]:hover {
       background-color: #ffffff;
       color: #0070a3; }
@@ -120,7 +121,7 @@ h1, h2, h3, h4, p, span, small, label, input, button, a {
   #additionnal-info ul {
     list-style-type: "-";
     padding-left: 0; }
-  #additionnal-info button {
+  #additionnal-info .phone-number {
     background-color: #0070a3;
     border-radius: 2rem;
     border: none;
@@ -129,10 +130,19 @@ h1, h2, h3, h4, p, span, small, label, input, button, a {
     font-weight: 600;
     padding: 7px 0;
     transition-property: background-color, color;
-    transition-duration: 500ms; }
-    #additionnal-info button:hover {
+    transition-duration: 500ms;
+    margin: auto;
+    text-decoration: none;
+    box-shadow: 0px 2px 15px 2px #e6e6e6;
+    text-align: center;
+    width: 80%; }
+    #additionnal-info .phone-number:hover {
       background-color: #ffffff;
       color: #0070a3; }
+    #additionnal-info .phone-number small {
+      display: block;
+      font-size: 12px;
+      font-weight: light; }
   #additionnal-info .additionnal-info-text header {
     margin-bottom: 15px; }
     #additionnal-info .additionnal-info-text header h3 {
@@ -143,15 +153,6 @@ h1, h2, h3, h4, p, span, small, label, input, button, a {
       display: inline; }
       #additionnal-info .additionnal-info-text header .additionnal-info-icon .icon-details {
         --main-color: #4caabe; }
-  #additionnal-info .additionnal-info-text button {
-    width: 80%;
-    margin: auto;
-    border: 2px solid #0070a3; }
-    #additionnal-info .additionnal-info-text button small {
-      font-size: 12px;
-      display: block;
-      margin: 0;
-      padding: 0; }
   #additionnal-info .additionnal-info-map .map-container {
     width: 100%;
     padding: 0;
@@ -179,9 +180,9 @@ h1, h2, h3, h4, p, span, small, label, input, button, a {
       --main-color: #ffffff; }
     #additionnal-info .additionnal-info-map .map-container:hover .overlay {
       z-index: 100; }
-  #additionnal-info .phone-number {
-    width: 50%;
-    margin: auto; }
+  @media (max-width: 1200px) {
+    #additionnal-info .phone-number {
+      width: 100%; } }
   @media (max-width: 992px) {
     #additionnal-info header {
       margin: auto;
@@ -193,11 +194,6 @@ h1, h2, h3, h4, p, span, small, label, input, button, a {
     #additionnal-info .additionnal-info-map .map-container .overlay {
       border-radius: 0; }
     #additionnal-info .phone-number {
-      margin: auto;
-      display: block;
-      border: 2px solid #0070a3; }
-      #additionnal-info .phone-number small {
-        display: block;
-        font-size: 12px; } }
+      margin: auto; } }
 
 /*# sourceMappingURL=main.css.map */

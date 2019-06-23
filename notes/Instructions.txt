@@ -1,16 +1,16 @@
 Instructions et remarques :
-- Langages é utiliser : HTML5 / CSS3 (done)
+- Langages a utiliser : HTML5 / CSS3 (done)
 - Ne pas utiliser JavaScript (done)
-- Gérer les différentes tailles de responsive (done)
-- Appliquer les effets de hover & focus détaillés dans la maquette (done)
+- Gerer les differentes tailles de responsive (done)
+- Appliquer les effets de hover & focus detailles dans la maquette (done)
 - Styliser les boutons radio et checkbox du formulaire comme sur les maquettes (done)
 - Il est possible d'utiliser un framework CSS (Bootstrap)
-- Idéalement, utiliser Sass 3 (done)
+- Idealement, utiliser Sass 3 (done)
 - Utiliser les assets graphiques fournis (done)
 
 
-Voici les principaux points sur lesquels seront noté ce test :
+Voici les principaux points sur lesquels seront note ce test :
 - Le respect des maquettes (couleurs, calages, tailles, etc.)
-- La propreté et l'organisation du code
-- La qualité du code HTML et CSS
-- La rigueur et l'attention données aux détails
+- La proprete et l'organisation du code
+- La qualite du code HTML et CSS
+- La rigueur et l'attention donnees aux details
