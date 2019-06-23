@@ -5,8 +5,9 @@
     h3
         font-size: 24px
         font-weight: bold
+        vertical-align: middle
 
-    p, h4, li
+    p, li
         color: $text-color-1
         font-size: 17px
         font-family: $font-stack-1
@@ -16,72 +17,106 @@
         list-style-type: "-"
         padding-left: 0
 
-    
-    // Block headers
-    header
-        margin-bottom: 15px
-        h3
-            display: inline
+    button
+        @include round_button($accent-color, $text-color-2)
 
-        .additionnal-info-icon
-            width: 32px
-            height: 32px
-            display: inline
-            .icon-details
-                --main-color: #4caabe
 
-    // Contact button
-    button 
-        @include round_button
-        width: 80%
-        margin: auto
 
-        small
-            font-size: 12px
-            display: block
-            margin: 0
-            padding: 0
-    
+    // Text block (upper block)
+    .additionnal-info-text
+        
+        header
+            margin-bottom: 15px
+            h3
+                display: inline
+
+            .additionnal-info-icon
+                width: 32px
+                height: 32px
+                display: inline
+                .icon-details
+                    --main-color: #4caabe
+
+        // Contact button
+        button 
+            width: 80%
+            margin: auto
+            border: 2px solid $accent-color
+
+            small
+                font-size: 12px
+                display: block
+                margin: 0
+                padding: 0
+        
 
     // Map
-    .map-container
-        width: 100%
-        padding: 0
-        position: relative
-        cursor: pointer
-
-        img 
-            border-radius: 15px
+    .additionnal-info-map
+        .map-container
             width: 100%
-            height: 100%
-            @media (max-width: $lg)
-                border-radius: 0
+            padding: 0
+            position: relative
+            cursor: pointer
 
-        .overlay
-            background-color: rgba(0, 0, 0, 0.5)
-            border-radius: 15px
-            position: absolute
-            top: 0
-            left: 0
-            width: 100%
-            height: 100%
-            z-index: -1    
-            @media (max-width: $lg)
-                border-radius: 0
+            img 
+                border-radius: 15px
+                width: 100%
+                height: 100%
 
-
-        .mag-indicator
-            width: 20%
-            height: 20%
-            position: absolute
-            top: 40%
-            left: 40%
-            --main-color: #ffffff
-
-
-        // Map container on hover
-        &:hover
+            
             .overlay
-                z-index: 100
+                background-color: rgba(0, 0, 0, 0.5)
+                border-radius: 15px
+                position: absolute
+                top: 0
+                left: 0
+                width: 100%
+                height: 100%
+                z-index: -1    
+
+
+            .mag-indicator
+                width: 20%
+                height: 20%
+                position: absolute
+                top: 40%
+                left: 40%
+                --main-color: #ffffff
+
+
+            // Map container on hover
+            &:hover
+                .overlay
+                    z-index: 100
 
    
+    .phone-number
+        width: 50%
+        margin: auto
+
+
+    // #additionnal-info for small screens
+    @media (max-width: $lg)
+        header
+            margin: auto
+            text-align: center
+
+        .additionnal-info-text 
+            div 
+                margin-bottom: 25px
+
+        .additionnal-info-map
+            .map-container
+                img
+                    border-radius: 0
+                .overlay
+                    border-radius: 0
+
+        .phone-number
+            margin: auto
+            display: block
+            border: 2px solid $accent-color
+            
+            small 
+                display: block
+                font-size: 12px

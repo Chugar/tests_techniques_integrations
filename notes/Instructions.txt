@@ -1,17 +1,16 @@
 Instructions et remarques :
-- Langages à utiliser : HTML5 / CSS3
-- Ne pas utiliser JavaScript
-- La maquette graphique a été réalisée et optimisée pour des écrans avec une résolution de 1920*1080px
-- Gérer les différentes tailles de responsive (il n'y a que le desktop en maquette, le responsive est à réaliser en adaptant la version desktop pour avoir un rendu propre sur 13", mobile etc.)
-- Appliquer les effets de hover & focus détaillés dans la maquette
-- Styliser les boutons radio et checkbox du formulaire comme sur les maquettes
-- Il est possible d'utiliser un framework CSS (idéalement Bootstrap)
-- Idéalement, utiliser Sass 3 (syntaxe SCSS)
-- Utiliser les assets graphiques fournis
+- Langages Ã© utiliser : HTML5 / CSS3 (done)
+- Ne pas utiliser JavaScript (done)
+- GÃ©rer les diffÃ©rentes tailles de responsive (done)
+- Appliquer les effets de hover & focus dÃ©taillÃ©s dans la maquette (done)
+- Styliser les boutons radio et checkbox du formulaire comme sur les maquettes (done)
+- Il est possible d'utiliser un framework CSS (Bootstrap)
+- IdÃ©alement, utiliser Sass 3 (done)
+- Utiliser les assets graphiques fournis (done)
 
 
-Voici les principaux points sur lesquels seront noté ce test :
+Voici les principaux points sur lesquels seront notÃ© ce test :
 - Le respect des maquettes (couleurs, calages, tailles, etc.)
-- La propreté et l'organisation du code
-- La qualité du code HTML et CSS
-- La rigueur et l'attention données aux détails
+- La propretÃ© et l'organisation du code
+- La qualitÃ© du code HTML et CSS
+- La rigueur et l'attention donnÃ©es aux dÃ©tails

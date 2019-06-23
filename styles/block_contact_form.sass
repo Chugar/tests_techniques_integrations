@@ -3,14 +3,11 @@
     content: "*"
 
 
-// Form styling
 #contactus-form
     background-color: $primary-color
     border-radius: 15px
     color: $text-color-2
     padding: 40px
-    @media (max-width: $lg)
-        border-radius: 0
 
     // Titles
     h2 
@@ -37,12 +34,7 @@
     
     // Inputs
     input, textarea
-        border-radius: 25px
-        border: none
-        color: $text-color-1
-        font-size: 18px
-        font-weight: 500
-        padding: 15px 25px
+        @include input_field
 
         // Custom checkbox and radio buttons
         &[type='checkbox'], &[type='radio']
@@ -91,15 +83,23 @@
             font-size: 12px
             line-height: 12px
             text-align: center
-            font-weight: light
             color: #ffffff
 
 
     // Submit button
     button[type="submit"]
-        @include round_button
+        @include round_button($accent-color, $text-color-2)
         margin: auto
         width: 50%
 
     small
         font-size: 12px
+
+
+
+
+    // # contactus-form for smaller screens
+    @media (max-width: $lg)
+        border-radius: 0
+        margin-bottom: 25px
+

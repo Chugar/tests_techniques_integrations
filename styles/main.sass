@@ -1,8 +1,24 @@
-@import './theming.sass'
-@import './items.sass'
+// Bootstrap Media Queries
+$sm: 576px
+$md: 768px
+$lg: 992px
+$xl: 1200px
 
-@import './responsive_behavior.sass'
-           
+
+
+// Fluid container for smaller screens
+@media (max-width: $lg)
+   .container
+      width: 100%
+      max-width: none
+      margin: 0
+      padding: 0
+
+        
+
+// Imports
+@import './theming.sass'
+@import './reusable_items.sass'           
 
 @import './block_contact_form.sass'
 @import './block_additionnal_info.sass'

@@ -18,7 +18,7 @@
         <script src="https://kit.fontawesome.com/5f876598f4.js"></script>
 
         <!-- Google fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
 
         <!-- Stylesheets -->
         <link rel="stylesheet" href="css/main.css">
@@ -183,7 +183,7 @@
                 <div id="additionnal-info" class="col-lg-6">
                     
                     <!-- Additionnal info : text -->
-                    <div class="row">
+                    <div class="row additionnal-info-text">
 
                         <div class="col-md-6">
                             <header>
@@ -202,8 +202,8 @@
                             <p> Le samedi de <time>10h00</time> a <time>12h30</time> et de <time>14h</time> à <time>19h</time></p>
 
 
-                            <h3 class="mt-4 d-md-none d-lg-block ">Nous contacter</h3>
-                            <button class="d-md-none d-lg-block">
+                            <h3 class="mt-4 d-none d-lg-block ">Nous contacter</h3>
+                            <button class="d-none d-lg-block mt-4">
                                 0 800 659 36
                                 <small>Numero vert et gratuit</small>
                             </button>
@@ -222,7 +222,7 @@
                             </header>
 
                             <p>
-                                <h4>Rejoindre Paris et l'île-de-France</h4>
+                                Rejoindre Paris et l'île-de-France :
                                 <ul>
                                     <li>25 minutes en voiture via l'A31</li>
                                     <li>25 minutes en RER B depuis la gare d'Antony Rive Gauche (à 6 minutes à pied).</li>
@@ -230,7 +230,7 @@
                             </p>
 
                             <p>
-                                <h4>Circuler dans Antony et autour</h4>
+                                Circuler dans Antony et autour :
                                 <ul>
                                     <li>A 10 minutes à pied au centre-ville et des commerces</li>
                                     <li>A 850 mètres à pied du bus iterne de la commune «Gare d'Antony Rive Gauche » BUS 265, ligne J et ligne V»</li>
@@ -241,7 +241,7 @@
                     </div>
 
                     <!-- Additionnal info : map -->
-                    <div class="row">
+                    <div class="row additionnal-info-map">
                         <div class="map-container">
                             
                             <img src="./assets/img/plan.jpg" alt="Access plan">
@@ -252,11 +252,15 @@
                             </div>
 
                         </div>
-
-                        <div class="row d-lg-none d-md-block">
-                            Num de tel
-                        </div>
                     </div>
+
+                    <!-- Responsive link to tel -->
+                    <button class="d-lg-none d-md-block phone-number mt-3">
+                        0 800 659 36
+                        <small>Numero vert et gratuit</small>
+                    </button>
+
+
                 </div>
                 <!-- ./Additionnal info block-->
                 
