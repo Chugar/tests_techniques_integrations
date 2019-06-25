@@ -1,5 +1,6 @@
-Estimations pour le temps de réalistion :
-- Setup du projet : 20min
+﻿Estimations pour le temps de réalistion :
+- Setup du projet : 15min
 - Coté gauche, formulaire : 3h (sans difficutés)
-- Coté droit, infos complémentaires : 4h30
-+ Une journée d'auto-formation sur les SVG et la façon de styliser les checkbox et radio buttons
+- Coté droit, infos complémentaires : 4h30 (sans trop de difficultés aussi)
+- Une journée d'auto-formation sur les SVG et la façon de styliser les checkbox / radio
+- 1h à 2h de de petites corrections
